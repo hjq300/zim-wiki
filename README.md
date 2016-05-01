@@ -1,10 +1,5 @@
 zim-wiki
 ========
 
-This repository is a placeholder so we can use the asociated wiki for community documentation.
+This repository is a fork for https://github.com/jaap-karssenberg/zim-wiki/ including the source code from https://launchpad.net/zim
 
-Go to https://github.com/jaap-karssenberg/zim-wiki/wiki for the editable wiki.
-
-
-The actual source code for zim is maintained as a Bazaar branch, you can find it here:
-https://code.launchpad.net/~jaap.karssenberg/zim/
