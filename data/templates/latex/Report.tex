@@ -1,6 +1,6 @@
 \documentclass{scrreprt}
 \usepackage[mathletters]{ucs}
-\usepackage[utf8x]{inputenc}
+\usepackage[utf8]{inputenc}  % Change utf8x -> utf8
 \usepackage{amssymb}
 \usepackage{amsmath}
 \usepackage[usenames]{color}
@@ -9,6 +9,17 @@
 \usepackage{graphicx}
 \usepackage[normalem]{ulem}
 \usepackage{enumerate}
+
+% Add to support Chinese
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{CJKutf8}
+
+\newenvironment{SChinese}{%
+ \CJKfamily{gbsn}%
+ \CJKtilde
+ \CJKnospace}{}
+% End
 
 \usepackage{listings}
 
@@ -31,6 +42,8 @@ breakatwhitespace=false,        % sets if automatic breaks should only happen at
 \author{}
 
 \begin{document}
+\begin{CJK}{UTF8}{}
+ \begin{SChinese}
 
 \maketitle
 
@@ -40,4 +53,6 @@ breakatwhitespace=false,        % sets if automatic breaks should only happen at
 [% page.content %]
 [% END %]
 
+ \end{SChinese}
+\end{CJK}
 \end{document}
